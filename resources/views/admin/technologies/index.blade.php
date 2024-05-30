@@ -70,7 +70,7 @@
                                         <span style="font-size: 0.7rem" class="text-uppercase">Delete</span>
                                     </button>
 
-                                    <div class="modal fade" id="modal-{{ $tech->id }}" tabindex="-1"
+                                    <div class="modal fade text-dark" id="modal-{{ $tech->id }}" tabindex="-1"
                                         data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
                                         aria-labelledby="modalTitle-{{ $tech->id }}" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"

@@ -18,12 +18,12 @@
                         <td>{{ $project->title }}</td>
                         <td>{{ $project->type?->name ?? 'no type' }}</td>
                         <td>
-                            @if (Str::startsWith($project->image, 'uploads/'))
-                                <div class="image_container">
-                                    <img class="rounded" src="{{ asset("storage/$project->image") }}"
-                                        alt="{{ $project->title }}">
-                                </div>
-                            @endif
+                            {{-- @if (Str::startsWith($project->image, 'uploads/')) --}}
+                            <div class="image_container">
+                                <img class="rounded" src="{{ asset("storage/$project->image") }}"
+                                    alt="{{ $project->title }}">
+                            </div>
+                            {{-- @endif --}}
                         </td>
                         <td>
                             <div class="d-flex justify-content-end gap-2">
@@ -40,7 +40,7 @@
                                     <span style="font-size: 0.7rem" class="text-uppercase">Delete</span>
                                 </button>
 
-                                <div class="modal fade" id="modal-{{ $project->id }}" tabindex="-1"
+                                <div class="modal fade text-dark" id="modal-{{ $project->id }}" tabindex="-1"
                                     data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
                                     aria-labelledby="modalTitle-{{ $project->id }}" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"

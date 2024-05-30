@@ -33,7 +33,7 @@
                             </g>
                         </svg> --}}
                         <img style="filter: grayscale()" width="30"
-                            src="{{ Vite::asset('/resources/images/logo-blue-outline.png') }}" alt="fw">
+                            src="{{ Vite::asset('/resources/images/logo-gray100.png') }}" alt="fw">
                     </div>
                     {{-- config('app.name', 'Laravel') --}}
                 </a>

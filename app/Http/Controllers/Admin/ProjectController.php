@@ -18,7 +18,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return view('admin.projects.index', ['projects' => Project::orderByDesc('id')->paginate(5)]);
+        return view('admin.projects.index', ['projects' => Project::orderByDesc('id')->paginate(6)]);
     }
 
     /**
@@ -38,7 +38,6 @@ class ProjectController extends Controller
     {
 
         $val_data = $request->validated();
-
         $val_data['slug'] = Str::slug($request->title, '-');
         $val_data['image'] = Storage::put('uploads', $request->image);
 
